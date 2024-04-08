@@ -1,4 +1,4 @@
-package com.davi.shop.resources;
+package com.davi.shop.controlers;
 
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

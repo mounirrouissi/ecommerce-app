@@ -1,4 +1,4 @@
-package com.davi.shop.resources.impl;
+package com.davi.shop.controlers.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

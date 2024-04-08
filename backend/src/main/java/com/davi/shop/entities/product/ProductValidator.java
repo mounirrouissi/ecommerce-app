@@ -19,30 +19,30 @@ public class ProductValidator extends Validator {
     }
 
     private void checkRegionalCouncilConstraints() {
-	final var fieldToValidate = this.tax.getRegionalCouncil();
-	final String messageField = "'regionalCouncil'";
-
-	if (Objects.isNull(fieldToValidate)) {
-	    this.validationHandler().append(new Error(
-		    "%s should not be null".formatted(messageField)));
-	}
-
-	if (!(fieldToValidate instanceof BigDecimal)) {
-	    this.validationHandler().append(new Error(
-		    "%s should be a number".formatted(messageField)));
-	}
-
-	if (Objects.nonNull(fieldToValidate)) {
-	    if (fieldToValidate.intValue() < 0) {
-		this.validationHandler()
-			.append(new Error("%s should not be negative"
-				.formatted(messageField)));
-	    } else if (fieldToValidate.intValue() > 999999) {
-		this.validationHandler().append(
-			new Error("%s should not be above 999.999"
-				.formatted(messageField)));
-	    }
-	}
+//	final var fieldToValidate = this.tax.getRegionalCouncil();
+//	final String messageField = "'regionalCouncil'";
+//
+//	if (Objects.isNull(fieldToValidate)) {
+//	    this.validationHandler().append(new Error(
+//		    "%s should not be null".formatted(messageField)));
+//	}
+//
+//	if (!(fieldToValidate instanceof BigDecimal)) {
+//	    this.validationHandler().append(new Error(
+//		    "%s should be a number".formatted(messageField)));
+//	}
+//
+//	if (Objects.nonNull(fieldToValidate)) {
+//	    if (fieldToValidate.intValue() < 0) {
+//		this.validationHandler()
+//			.append(new Error("%s should not be negative"
+//				.formatted(messageField)));
+//	    } else if (fieldToValidate.intValue() > 999999) {
+//		this.validationHandler().append(
+//			new Error("%s should not be above 999.999"
+//				.formatted(messageField)));
+//	    }
+//	}
     }
 
 }

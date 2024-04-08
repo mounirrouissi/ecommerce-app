@@ -1,4 +1,4 @@
-package com.davi.shop.resources.impl;
+package com.davi.shop.controlers.impl;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -7,13 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.ResponseEntity.HeadersBuilder;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.davi.shop.dto.controller.ProductDTO;
 import com.davi.shop.dto.product.RegisterProductDTO;
 import com.davi.shop.entities.product.Product;
-import com.davi.shop.resources.ProductAPI;
+import com.davi.shop.controlers.ProductAPI;
 import com.davi.shop.services.ProductService;
 
 @RestController

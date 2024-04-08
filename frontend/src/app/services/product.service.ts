@@ -4,6 +4,7 @@ import { Product } from '../common/product';
 import { map, Observable } from 'rxjs';
 import { ProductCategory } from '../common/product-category';
 import { environment } from 'src/environments/environment';
+import { log } from 'console';
 
 @Injectable({
   providedIn: 'root'
@@ -64,7 +65,8 @@ export class ProductService {
   }
 
   getOneProductById(id: number): Observable<Product> {
-    const url = `${ this.searchUrl }/${ id }`;
+    const url = `${ this.baseUrl }/${ id }`;
+  console.log('the url to get product ==' +url)
     return this.httpClient.get<Product>(url)
       .pipe(map(product => product));
   }

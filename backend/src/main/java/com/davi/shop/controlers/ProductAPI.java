@@ -1,4 +1,4 @@
-package com.davi.shop.resources;
+package com.davi.shop.controlers;
 
 import java.net.URISyntaxException;
 
@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.davi.shop.dto.controller.ProductDTO;
 import com.davi.shop.dto.product.RegisterProductDTO;
-import com.davi.shop.entities.product.Product;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;

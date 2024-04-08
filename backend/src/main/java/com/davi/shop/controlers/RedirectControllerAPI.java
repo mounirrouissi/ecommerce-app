@@ -1,4 +1,4 @@
-package com.davi.shop.resources;
+package com.davi.shop.controlers;
 
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;

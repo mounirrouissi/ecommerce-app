@@ -1,4 +1,4 @@
-package com.davi.shop.resources.impl;
+package com.davi.shop.controlers.impl;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
 
-import com.davi.shop.resources.RedirectControllerAPI;
+import com.davi.shop.controlers.RedirectControllerAPI;
 
 @Controller
 @RequestMapping("/")

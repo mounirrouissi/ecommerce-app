@@ -1,4 +1,4 @@
-package com.davi.shop.resources.impl;
+package com.davi.shop.controlers.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.davi.shop.dto.controller.PaymentInfoDTO;
 import com.davi.shop.dto.controller.PurchaseDTO;
 import com.davi.shop.dto.controller.PurchaseResponseDTO;
-import com.davi.shop.resources.CheckoutAPI;
+import com.davi.shop.controlers.CheckoutAPI;
 import com.davi.shop.services.CheckoutService;
 import com.stripe.exception.StripeException;
 import com.stripe.model.PaymentIntent;
