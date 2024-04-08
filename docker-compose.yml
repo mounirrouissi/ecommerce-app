@@ -16,7 +16,7 @@ services:
       timeout: 5s
       retries: 30
   backend:
-    image: davi38/ecommerce-back
+    image: mounirr/ecom-back
     #build: ./backend
     restart: always
     environment:
@@ -42,12 +42,12 @@ services:
       interval: 10s
       timeout: 5s
       retries: 30
-  # frontend:
-  #   image: davi38/ecommerce-front
-  #   #build: ./frontend
-  #   restart: always
-  #   ports:
-  #     - "4200:4000"
-  #   depends_on:
-  #     backend:
-  #       condition: service_healthy
+  frontend:
+    image:  mounirr/ecom-front:1.4
+    #build: ./frontend
+    restart: always
+    ports:
+      - "4200:4000"
+    depends_on:
+      backend:
+        condition: service_healthy
