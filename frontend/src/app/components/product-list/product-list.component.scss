@@ -1,8 +1,14 @@
-/*
- * ----------------------------
- * Products List
- * ----------------------------
- */
+/* Modern Product List Styles */
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
 
 .product-box img {
   width: 150px;
@@ -17,20 +23,11 @@
   outline: 0;
   margin-left: 5px;
 }
-.product-box {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  margin-top: 20px;
-}
 
-.btn-product-bottom{
+.btn-product-bottom {
   position: absolute;
   bottom: 55px;
-  right: 0px;
+  right: 0;
 }
 
 .price {
@@ -39,6 +36,7 @@
   color: #0da8e4;
   margin-bottom: 30px;
 }
+
 .product-box h1 {
   font-size: 18px;
   border-bottom: 1px solid #ccc;
@@ -47,6 +45,7 @@
   padding-top: 12px;
   margin-bottom: 7px;
 }
+
 .product-box h2 {
   font-size: 15px;
   padding-bottom: 0;

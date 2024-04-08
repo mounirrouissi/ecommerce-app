@@ -46,7 +46,8 @@ export class ProductService {
   }
 
   searchProducts(theKeyword: string | null): Observable<Product[]> {
-    const searchUrl = `${ this.searchUrl }?name=${ theKeyword }`;
+    console.log('searching...');
+    const searchUrl = `${ this.baseUrl }?name=${ theKeyword }`;
     console.log(searchUrl);
     return this.getProducts(searchUrl);
   }
@@ -56,8 +57,9 @@ export class ProductService {
     thePageSize: number,
     theKeyword: string): Observable<ApiResponseProduct> {
 
-    const searchUrl = `${ this.searchUrl }?name=${ theKeyword }`
+    const searchUrl = `${ this.baseUrl }?name=${ theKeyword }`
       + `&page=${ thePage }&size=${ thePageSize }`;
+        //  const searchUrl = `${ this.baseUrl }?name=${ theKeyword }`;
 
     console.log("Searching...");  
     return this.httpClient.get<ApiResponseProduct>(searchUrl)
