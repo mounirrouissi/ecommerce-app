@@ -1,0 +1,57 @@
+/* Add some padding and margins to layout elements */
+.page-wrapper {
+    padding: 20px;
+  }
+  
+  .menu-sidebar {
+    margin-right: 20px;
+  }
+  
+  .page-container {
+    margin-left: 20px;
+  }
+  
+  /* Style the menu */
+  .menu-sidebar {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the header */
+  .header-desktop {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  /* Add transitions for smoother animations */
+  .menu-sidebar, 
+  .header-desktop,
+  footer {
+    transition: background-color 0.3s;
+  }
+  

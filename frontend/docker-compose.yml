@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  frontend:
+    image: mounirr/ecom-front:1.3
+    #build: ./frontend
+    restart: always
+    ports:
+      - "4200:4000"
+    # depends_on:
+    #   backend:
+    #     condition: service_healthy
