@@ -1,7 +1,7 @@
 # Ecommerce Project
 
 Welcome to the Ecommerce project repository! This project is of an online shopping website with many features, such as:
-product cart, form validation, payment via stripe and many more.
+product cart, form validation, payment via stripe and many more. 
 
 
 ## Technologies Used
@@ -28,6 +28,3 @@ docker-compose up
 This command may take some time to complete as it needs to download all the necessary dependencies and build the project. Once it's finished, you can access the application by navigating to `http://localhost:4200` in your web browser.
 
 
-## Contributing
-
-If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. We welcome any contributions and feedback!
